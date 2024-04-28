@@ -1,0 +1,290 @@
+.myInfo{
+  float: left ;
+  background-color: #1e2021;
+  font-weight: 600;
+  font-size: large;
+  color: #fff;
+  opacity: .8;
+ 
+ }
+
+
+
+.about_feed{
+  padding:7px;
+  animation: changeBackground 5s infinite; 
+  text-align: center;
+  font-size: small;
+  margin-top: 100px;
+  height: 50px;
+  color: #283618;
+  font-family:cursive;
+border-top-left-radius: 100%;
+border-top-right-radius: 100%;
+border-bottom-left-radius: 100%;
+border-bottom-right-radius: 100%;
+}
+@keyframes changeBackground {
+  0% ,100% {
+    background-color: #FEFAE0; /* اللون الأول */
+  }
+  33.33% {
+    background-color: #DDA15E; /* اللون الثاني */
+  }
+  66.66% {
+    background-color: #BC6C25; /* اللون الثالث */
+  }
+}
+
+.feedform{
+    width: 50%;
+    height: 250px;
+    margin:15% auto;
+    margin-top: auto;
+    text-align: center ;
+}
+#submitBtn {
+    width: 25%;
+    padding: 10px;
+    border: none;
+    background-color: #DDA15E;
+    color: #1e2021;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: bolder;
+    font-size: large;
+    transition: .75s;
+
+  }
+  
+  #submitBtn:hover {
+    background-color: #BC6C25;
+    color: #283618;
+    transform: scale(1.1);
+
+  }
+  
+.title{
+    color: #283618;
+    font-family: serif;
+    transition: .75s;
+}
+.title:hover{
+  transform: scale(1.1);
+  color: #BC6C25;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  cursor: pointer;
+  width: 40px;
+  font-size: 40px;
+  color: rgb(166, 164, 164);
+}
+
+.rating label:before {
+  content: '★';
+}
+
+.rating input:checked ~ label {
+  color: #BC6C25;
+}
+
+  .feedbackText{
+   width:100%;
+   height: 100%;
+    }
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+      
+.related-feedback {
+        margin: 0;
+        flex: 1 1 45%;
+        width: inherit;
+        padding:10px;
+        border-radius: 10px;
+      }
+    .most-related{
+      color: #283618;
+      text-align: center;
+      transition: 0.75s;
+      margin-bottom: 10px;
+    }
+    .most-related :hover{
+       color: #BC6C25;
+      transform: scale(1.1);
+    }
+.feedback-list {
+       border: #BC6C25 solid;
+        list-style-type: none;
+      }
+      /* CSS styles for full-width thank you message */
+    #thanks {
+      display: none;
+      font-size:x-large;
+      width: 100vw; /* Set the width equal to the viewport width */
+      text-align: center; /* Center the message horizontally */
+      background-color: #BC6C25; /* Add a background color */
+      padding: 20px 0; /* Add some padding for better visibility */
+      margin: 0; /* Remove any default margin */
+      position: fixed; /* Fixed positioning to make it always visible */
+      bottom: 0; /* Position it at the bottom */
+      left: 0; /* Align it to the left */
+    }
+    
+      .comment1,
+      .comment2,
+      .comment3 {
+        margin: 5px 10px 5px 0;  
+        margin-bottom: 2px; /* Adjust the spacing between comments */
+        border: #DDA15E solid;
+        background-color: #fff;
+        border-top-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        font-size: large;
+        padding: 10px; /* Add padding to the comments for better spacing */
+      }
+      
+      .comment1 img,
+      .comment2 img,
+      .comment3 img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        margin-right: 20px;
+      }
+      
+      .comment1 span,
+      .comment2 span,
+      .comment3 span {
+        display: block;
+        margin-top: 5px;
+      }
+      
+    .comment1 :hover,
+    .comment2 :hover,
+    .comment3:hover {
+      background-color: #DDA15E;
+      padding: 5px;};
+      .spancom{
+        font-size: larger;
+        font-weight: 800;
+      }
+      .audio_about_egypt{
+        margin-top: -10px;
+        width: 700px;
+        height: 70px;
+      }
+      .video_about_egypt{
+        width: 40%;
+        height: 200px;
+        margin-top: 0px;
+      }
+      .most-related {
+        margin-top: 20px; /* Adjust the margin for the "most related" section */
+      }
+      
+@media only screen and (max-width: 1200px) {
+  .about_feed h2{
+    font-size: medium;
+  }
+  .title h1 , .comment1,.comment2,.comment3 {
+    font-size: large;
+  }
+  .container .rating{
+    font-size: medium;
+  }
+  .feedbackText{
+    width:100%;
+    height: 100%;
+     }
+     textarea {
+         width: 100%;
+         padding: 15px;
+         margin-bottom: 10px;
+         border: 1px solid #ccc;
+         border-radius: 5px;
+       }
+  .most-related{
+    font-size: small;
+    margin-top: 10px;
+  }
+  button{
+    width: 150px;
+    font-size: small;
+  }
+  .related-feedback .most-related{
+          margin: 0;
+          flex: 1 1 45%;
+          width: inherit;
+          padding:50px;
+          padding-bottom: 0;
+          border-radius: 10px;
+        }
+  .audio_about_egypt{
+    width: 500px;
+  }
+  .video_about_egypt{
+    width: 60%;
+    height: 200px;
+  }
+      }
+  
+ @media only screen and (max-width: 720px) {
+.about_feed h2{
+  font-size: small;
+}
+.title h1 , .comment1,.comment2,.comment3 {
+  font-size: large;
+}
+.container .rating{
+  font-size: small;
+}
+.feedbackText{
+  width:100%;
+  height: 90%;
+   }
+   textarea {
+       width: 100%;
+       padding: 5px;
+       margin-bottom: 10px;
+       border: 1px solid #ccc;
+       border-radius: 5px;
+     }
+.most-related{
+  font-size: small;
+  margin-top: 10px;
+}
+button{
+  width: 150px;
+  font-size: small;
+}
+.related-feedback .most-related{
+        margin: 0;
+        flex: 1 1 45%;
+        width: inherit;
+        padding:95px;
+        padding-bottom: 0;
+        border-radius: 10px;
+      }
+.audio_about_egypt{
+  width: 300px;
+}
+  }
